@@ -22,8 +22,9 @@ body{
 
 .logo{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 80px !important;
 }
 
 .logo h1{
@@ -35,8 +36,9 @@ body{
 
 .toggleBtn{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 100px !important;
 }
 .toggleBtn button{
     border: none;
@@ -74,11 +76,11 @@ body{
     position: relative;
     margin-bottom: 50px;
 }
-.content h1{
+.contentText h1{
     color: #444444;
     font-size: 3.6rem;
 }
-.content h1 span{
+.contentText h1 span{
     color: rgb(255, 38, 56);
     font-weight: 700;
 }
@@ -189,3 +191,117 @@ body{
     color: rgb(253, 57, 74);
 }
 
+
+
+
+/* Smartphones Small Medium*/
+@media only screen and (max-width: 375px) {
+    .logo{
+        padding-left: 30px !important;
+    }
+    .logo h1{
+        font-size: 2.8rem;
+    }
+    .toggleBtn{
+        padding-right: 40px !important;
+    }
+    .toggleBtn button i{
+        font-size: 2rem;
+    }
+    .contentText{
+        margin-bottom: 60px;
+    }
+    .contentText h1{
+        font-size: 2.6rem;
+    }
+    .sidebar{
+        width: 100vw;
+    }
+    .sdbrLogo h1{
+        font-size: 3.2rem;
+    }
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+    .sdbrItems ul li a{
+        font-size: 2.2rem;
+    }
+    .sdbrIcn a{
+        font-size: 2.3rem;  
+    }
+}
+
+
+/* Smartphones Mobile Medium*/
+@media(min-width: 321px) and (max-width: 375px) {
+    .logo{
+        padding-left: 30px !important;
+    }
+    .logo h1{
+        font-size: 3rem;
+    }
+    .toggleBtn{
+        padding-right: 40px !important;
+    }
+    .toggleBtn button i{
+        font-size: 2.2rem;
+    }
+    .contentText{
+        margin-bottom: 60px;
+    }
+    .contentText h1{
+        font-size: 3rem;
+    }
+    .sidebar{
+        width: 100vw;
+    }
+    .sdbrLogo h1{
+        font-size: 3.2rem;
+    }
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+    .sdbrItems ul li a{
+        font-size: 2.2rem;
+    }
+    .sdbrIcn a{
+        font-size: 2.3rem;  
+    }
+}
+
+/* Smartphones Mobile Large*/
+@media(min-width: 376px) and (max-width: 500px) {
+    .logo{
+        padding-left: 30px !important;
+    }
+    .logo h1{
+        font-size: 3rem;
+    }
+    .toggleBtn{
+        padding-right: 40px !important;
+    }
+    .toggleBtn button i{
+        font-size: 2.2rem;
+    }
+    .contentText{
+        margin-bottom: 60px;
+    }
+    .contentText h1{
+        font-size: 3rem;
+    }
+    .sidebar{
+        width: 100vw;
+    }
+    .sdbrLogo h1{
+        font-size: 3.2rem;
+    }
+    .sdbrBtn button i {
+        font-size: 2.5rem;
+    }
+    .sdbrItems ul li a{
+        font-size: 2.2rem;
+    }
+    .sdbrIcn a{
+        font-size: 2.3rem;  
+    }
+}
