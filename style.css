@@ -12,23 +12,25 @@ html{
 
 body{
     font-family: 'K2D', sans-serif !important;
+    position: relative;
 }
 
 .navigationBar{
     background-color: #444444;
+    height: 10vh;
 }
 
 .logo{
-    padding: 10px 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .logo h1{
     font-size: 3.5rem;
     font-family: 'Macondo', cursive;
     font-weight: bold;
-    color: #ffffff;
+    color: rgb(255, 38, 56);
 }
 
 .toggleBtn{
@@ -36,11 +38,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.toggleBtn i{
-    padding: 10px 30px;
+.toggleBtn button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.toggleBtn button i{
     font-size: 2.6rem;
     color: #ffffff;
+    transition: 0.2s;
     animation: toggleAnimation 0.8s ease-in 0s infinite alternate forwards;
 }   
 @keyframes toggleAnimation {
@@ -51,3 +57,135 @@ body{
         transform: scale(1.3);
     }
 }
+.toggleBtn button i:active{
+    color: rgb(253, 57, 74);
+}
+
+.content{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.content h1{
+    color: #444444;
+    font-size: 3.6rem;
+}
+.content h1 span{
+    color: rgb(255, 38, 56);
+    font-weight: 700;
+}
+
+
+.sidebar{
+    width: 360px;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #555555;
+    border-right: 3px solid #969696;
+    transform: translateX(-100%);
+    transition: 0.3s ease-out;
+}
+.showSidebar{
+    transform: translateX(0%) !important;
+}
+
+.sdbrheader{
+    box-shadow: 0px 5px 10px #818181;
+}
+.sdbrLogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sdbrLogo h1{
+    font-size: 3.7rem;
+    font-family: 'Macondo', cursive;
+    font-weight: bold;
+    color: rgb(255, 38, 56);
+}
+.sdbrBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sdbrBtn button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.sdbrBtn button i {
+    font-size: 2.8rem;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.sdbrBtn button i:hover{
+    transform: rotate(360deg);
+}
+.sdbrBtn button i:active{
+    color: rgb(253, 57, 74);
+}
+
+.sdbrItems ul{
+    list-style: none;
+}
+.sdbrItems ul li{
+    position: relative;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 6px 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.sdbrItems ul li:hover{
+    background-color: #c0c0c0;
+}
+.sdbrItems ul li:hover a{
+    color: rgb(255, 38, 56);
+    padding: 7px 300px 8px 15px;
+}
+.sdbrItems ul li a{
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none;
+    font-size: 2.6rem;
+    color: white;
+    font-weight: 500;
+    padding: auto;
+    padding: 7px 300px 8px 20px;
+    transition: 0.3s;
+}
+
+.sdbrIcons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sdbrIcn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.sdbrIcn a{
+    text-decoration: none;
+    font-size: 2.6rem;
+    color: white;
+    transition: 0.4s;
+}
+.sdbrIcn a:hover{
+    transform: rotate(360deg);
+    color: rgb(253, 57, 74);
+}
+

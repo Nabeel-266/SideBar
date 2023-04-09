@@ -21,15 +21,79 @@
 </head>
 <body>
     <header class="container-fluid p-0 m-0">
-        <nav class="navigationBar row py-0 px-5 m-0 d-flex justify-content-between">
-            <div class="logo col-2 m-0">
-                <h1 class="m-0 mb-1">Coding Pro</h1>
+        <nav class="navigationBar row p-0 m-0 d-flex justify-content-between">
+            <div class="logo col-4 m-0">
+                <h1 class="m-0">Coding Pro</h1>
             </div>
-            <div class="toggleBtn col-1 m-0">
-                <i class="p-0 mb-1 fa-solid fa-bars"></i>
+            <div class="toggleBtn col-2 m-0">
+                <button class="menuButton"><i class="p-0 fa-solid fa-bars"></i></button>
             </div>
         </nav>
     </header>
+
+
+    <div class="content row m-0 p-0">
+        <div class="contentText col-12">
+            <h1 class="m-0">
+                <span>if </span>(sidebar != open){ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; sidebar = open    <br>
+                }                     <br>
+                <span>else </span>{                <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;sidebar = closed  <br>
+                }                     <br>
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <div class="sdbrheader row m-0 px-0 py-3">
+            <div class="sdbrLogo col-10 p-0 ps-4">
+                <h1 class="m-0">Coding Pro</h1>
+            </div>
+            <div class="sdbrBtn col-2 p-0 pe-1">
+                <button class="crossButton"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="sdbrNavigateItems row m-0 p-0">
+            <div class="sdbrItems col-12 py-5 px-0">
+                <ul class="m-0 py-0 px-2">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sdbrIcons row m-0 p-5">
+            <div class="sdbrIcn col-12 m-0 p-0">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <script src="app.js"></script>
